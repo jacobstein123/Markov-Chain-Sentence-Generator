@@ -3,11 +3,15 @@ Markov-Chain-Sentence-Generator
 
 **How To Use:**
 
-* Place the sample text you want to analyze in the same folder as main.py
+* Place the sample text you want to analyze in the same folder as SentenceGenerator.py
 
-* Replace the file name (huckfinn.txt) in main.py with the file name of your desired text
+* Import SentenceGenerator into your project 
 
-* Call `generate_sentences(sample_text)` to create a sentence based on the text patterns in the sample text
+* Create a string `sample_text` with the contents of the textfile you wish to analyze
+
+* Call `SentenceGenerator.generate_sentences(sample_text)` to create a sentence based on the text patterns in the sample text
+
+* For an example usage and how to create paragraphs, see example.py
 
 **Algorithm Explanation:**
 
