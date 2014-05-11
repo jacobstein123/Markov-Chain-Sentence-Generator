@@ -1,8 +1,6 @@
 import random
 import re
 
-sample_text = open('huckfinn.txt', 'r').read() #change this to the filename you desire
-
 def get_seed(sample_text):
     text = ''.join([i for i in sample_text if i not in ['\x93','\x92','\x94','\x95',',','\x97','-','_']]) #eliminates problematic symbols that will hurt pattern detection
     lines = re.split('\. |\n|\? |\! |\.',text)
