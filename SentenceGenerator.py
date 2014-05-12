@@ -44,5 +44,8 @@ def generate_sentence(sample_text):
             break
         else:
             sentence.append(following_word)
-    return ' '.join(sentence).capitalize() + '.'
+    final_sentence = ' '.join(sentence).capitalize()
+    if final_sentence[-1] not in "?!":
+        final_sentence += "."
+    return final_sentence
 
