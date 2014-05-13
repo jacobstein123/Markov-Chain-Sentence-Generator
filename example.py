@@ -1,6 +1,7 @@
 import SentenceGenerator
 
-sample_text = open('huckfinn.txt','r').read() #load the text to analyze
+with open('huckfinn.txt','r') as textfile: #load the text to analyze
+    sample_text = textfile.read()
 
 #Generating one sentence:
 print SentenceGenerator.generate_sentence(sample_text)
